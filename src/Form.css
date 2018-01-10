@@ -1,0 +1,181 @@
+.form-container {
+  margin: 20px auto 50px;
+  width: 600px;
+}
+
+.form-header {
+  overflow: hidden;
+  height: 80px;
+  border-radius: 5px 5px 0 0;
+}
+
+.form-step__1,
+.form-step__2 {
+  display: flex;
+  padding: 15px;
+  color: #fff;
+}
+
+.form-step__1 svg,
+.form-step__2 svg {
+  font-size: 2em;
+}
+
+.form-step__1 span,
+.form-step__2 span {
+  align-self: center;
+  margin-left: 10px;
+  font-size: 1.2em;
+}
+
+.form-step__1 {
+  background-color: #425563;
+}
+
+.form-step__2 {
+  background-color: #b7c4cf;
+  position: relative;
+  left: 500px;
+  top: -80px;
+}
+
+.step__2--prvw {
+  left: 80px;
+  animation-name: fadeInLeft;
+}
+
+.form-step__1,
+.form-step__2,
+form { 
+  text-align: left;
+}
+
+form {
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.form-input {
+  margin-bottom: 15px;
+}
+
+.form-label{
+  color: #5B6D79;
+  font-size: .75em;
+  text-transform: uppercase;
+}
+
+.form-input > input {
+  padding: 10px 5px;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #a5afb8;
+  font-size: 1em;
+  font-weight: 400;
+  display: block;
+  box-sizing: border-box;
+}
+
+.form-input > .form-input-radio {
+  margin-top: 10px;
+}
+.form-input-radio input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.form-input-radio [type=radio]:checked ~ label > .custom-check {
+  background-color: #458B54;
+}
+
+.form-input-radio [type=radio]:checked ~ label > .custom-check::before{
+  content: '\f00c';
+  color: #fff; 
+}
+
+.custom-check {
+  margin-right: 10px;
+  display: inline-block;
+  border: 1px solid #AAAAAA;
+  border-radius: 100%;
+  height: 20px;
+  width: 20px;
+  z-index: 5;
+  transition: border .25s linear;
+  -webkit-transition: border .25s linear;
+}
+
+.custom-check:before {
+  font-family: 'FontAwesome';
+  display: inline-block;
+  content: '\f00c'; /* keep it here as well to avoid labels moving after being ticked */
+  color: #fff;
+  border-radius: 100%;
+  height: 15px;
+  width: 15px;
+  margin: auto;
+  transition: background 0.25s linear;
+  -webkit-transition: background 0.25s linear;
+  padding: 4px;
+}
+
+.form-input-radio label {
+  font-size: .75em
+}
+
+.form-input p {
+  margin-top: 5px;
+}
+
+.form-buttons,
+.form-buttons__preview {
+  display: flex;
+}
+
+.form-buttons {
+  justify-content: flex-end;
+}
+
+.form-buttons__preview {
+  justify-content: space-between;
+}
+
+button,
+.button.btn-change {
+  padding: 10px 25px;
+  border-radius: 8px;
+  font-size: .75em;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+button {
+  background: #D22630;
+  border: none;
+  color: #fff;
+}
+
+button.btn-change {
+  color: #D22630;
+  background-color: #fff;
+  border: 2px solid #D22630;
+}
+
+.btn-eye,
+.btn-check,
+.btn-undo {
+  margin-right: 5px;
+  vertical-align: -8%;
+}
+
+.input-error {
+  font-size: .75em;
+  color: #D22630;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.hide {
+  display: none;
+}
