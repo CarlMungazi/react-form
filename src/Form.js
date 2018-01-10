@@ -25,7 +25,7 @@ class Form extends Component {
       name: '', 
       number: '', 
       email: '',
-      userTypes: ['Airfi employee', 'Guest' ],
+      userTypes: ['Student', 'Guest' ],
       selectedUserType: '',
       formPreview: false,
       formSubmitted: false
